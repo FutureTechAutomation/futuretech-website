@@ -35,7 +35,7 @@ let projects = [
     { 
         id: 2, category: "Electronics", name: "Alcohol Detector", 
         desc: "0-25V LCD measurement.", price: 1500, 
-        img: "assets/alcohol.jpeg", video: "",
+        img: "assets/Alcohol.jpeg", video: "",
         popularity: 70, 
     },
     { 
@@ -120,7 +120,7 @@ function renderCategory(catName, sortBy = 'default') {
                     <div class="media-container">
                 ${p.video && p.video.trim() !== "" ? `
                     <div class="slider-wrapper" id="slider-${p.id}">
-                        <img src="${p.img}" alt="${p.name}" class="active-media" onerror="this.src='https://via.placeholder.com/250'">
+                        <img src="${p.img}" alt="${p.name}" class="active-media" onerror="this.onerror=null; this.src='https://via.placeholder.com/250'">
                         <video src="${p.video}" class="hidden-media" controls muted></video>
                         <div class="slider-controls">
                             <button onclick="toggleMedia(${p.id})">❮</button>
@@ -128,7 +128,7 @@ function renderCategory(catName, sortBy = 'default') {
                         </div>
                     </div>
                 ` : `
-                    <img src="${p.img}" alt="${p.name}" onerror="this.src='https://via.placeholder.com/250'">
+                    <img src="${p.img}" alt="${p.name}" onerror="this.onerror=null; this.src='https://via.placeholder.com/250'">
                 `}
             </div>
                     <h3>${p.name}</h3>
@@ -285,7 +285,7 @@ function executeSearch(searchQuery = null, sortBy = 'default') {
                     <div class="media-container">
                         ${p.video && p.video.trim() !== "" ? `
                             <div class="slider-wrapper" id="slider-${p.id}">
-                                <img src="${p.img}" alt="${p.name}" class="active-media" onerror="this.src='https://via.placeholder.com/250'">
+                                <img src="${p.img}" alt="${p.name}" class="active-media" onerror="this.onerror=null; this.src='https://via.placeholder.com/250'">
                                 <video src="${p.video}" class="hidden-media" controls muted></video>
                                 <div class="slider-controls">
                                     <button onclick="toggleMedia(${p.id})">❮</button>
@@ -293,7 +293,7 @@ function executeSearch(searchQuery = null, sortBy = 'default') {
                                 </div>
                             </div>
                         ` : `
-                            <img src="${p.img}" alt="${p.name}" onerror="this.src='https://via.placeholder.com/250'">
+                            <img src="${p.img}" alt="${p.name}" onerror="this.onerror=null; this.src='https://via.placeholder.com/250'">
                         `}
                     </div>
                     <h3>${p.name}</h3>
@@ -377,7 +377,7 @@ function renderHome() {
         html += `
             <div class="mini-card">
                 <div class="mini-media">
-                    <img src="${p.img}" alt="${p.name}" onerror="this.src='https://via.placeholder.com/150'">
+                    <img src="${p.img}" alt="${p.name}" onerror="this.onerror=null; this.src='https://via.placeholder.com/150'">
                 </div>
                 <h4>${p.name}</h4>
                 <div style="font-size: 0.85rem; color: #666; font-weight: bold; margin-bottom: 5px;">
@@ -577,5 +577,3 @@ function sendCustomInquiry() {
     document.getElementById('custDate').value = '';
     document.getElementById('custDetails').value = '';
 }
-
-
