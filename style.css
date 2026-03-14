@@ -525,23 +525,23 @@ body.dark-mode .home-hero::before {
 
 
 /* WHATSAPP FLOAT */
-
+/* --- THE WHATSAPP FLOAT FIX --- */
 .whatsapp-float {
-
     position: fixed;
-
     bottom: 20px;
-
     right: 20px;
-
-    background: green;
-
+    background: #25D366; /* True WhatsApp brand green */
     color: white;
-
-    padding: 15px;
-
+    padding: 12px 20px;
+    border-radius: 50px; /* Makes it a clean pill shape */
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Adds a drop shadow so it pops off the screen */
+    z-index: 9999 !important; /* Forces it to the absolute top layer of the website */
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
-
 
 /* MODAL */
 
