@@ -35,7 +35,7 @@ let projects = [
     { 
         id: 2, category: "Electronics", name: "Alcohol Detector", 
         desc: "0-25V LCD measurement.", price: 1500, 
-        img: "assets/Alcohol.jpeg", video: "",
+        img: "assets/alcohol.jpeg", video: "",
         popularity: 70, 
     },
     { 
