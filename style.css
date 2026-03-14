@@ -1227,3 +1227,74 @@ body.dark-mode .home-hero::before {
         width: 100% !important;
     }
 }
+
+/* --- COMPREHENSIVE MOBILE REGRESSION FIX --- */
+/* This code triggers only on mobile devices (screens < 768px) */
+@media (max-width: 768px) {
+
+    /* --- FIX 1: THE CONTAINER ALIGNMENT --- */
+    /* Stops the entire page from shoving everything to the left. */
+    body, html {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden !important; /* Forces the whole page to fit on screen */
+    }
+
+    /* --- FIX 2: THE SPILLING HEADER & LOGO --- */
+    /* This forces the header to be a neat, vertically stacked column, 
+       preventing the logo and text from breaking out to the right. */
+    header {
+        display: flex !important;
+        flex-direction: column !important; /* Stacks Logo on top, Navigation below */
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        padding: 10px 0 !important;
+        align-items: center !important; /* Centers everything on the screen */
+    }
+
+    /* Target the nav links and dark mode button specifically */
+    header nav {
+        display: flex !important;
+        flex-wrap: wrap !important; /* Allows buttons to drop to a new line if needed */
+        justify-content: center !important;
+        gap: 15px !important;
+        width: 95% !important; /* Leaves a tiny bit of breathing room on the edges */
+        margin-top: 10px !important;
+    }
+
+    /* Targets the logo image itself to make sure it doesn't break the container */
+    header img {
+        max-width: 250px !important; /* Forces a safe size for the logo */
+        height: auto !important;
+        margin-bottom: 5px !important;
+    }
+
+    /* Targets the main header text "FUTURETECH AUTOMATION" */
+    header h1 {
+        width: 100% !important;
+        text-align: center !important;
+        justify-content: center !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    /* Targets the text inside the header (like 'About') and the dark mode icon */
+    header nav a, header nav .dark-mode-icon {
+        color: white !important; /* Guarantees visibility in light/dark transitions */
+    }
+
+    /* --- FIX 3: WHATSAPP BUTTON BEHIND HERO --- */
+    /* This forces the WhatsApp button to have a superior stacking layer 
+       over the black background of the hero section. */
+    .whatsapp-btn, #whatsapp-widget, .chat-on-whatsapp {
+        z-index: 9999 !important; /* Higher than any hero section */
+        position: fixed !important; /* Sticks it in one spot */
+        bottom: 20px !important;
+        right: 20px !important;
+        display: block !important;
+        opacity: 1 !important;
+        pointer-events: auto !important; /* Restores clicking capability */
+    }
+}
