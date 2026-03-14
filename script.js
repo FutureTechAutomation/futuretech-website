@@ -20,21 +20,21 @@ function shareProject(projectName) {
 let projects = [
     { 
         id: 1, category: "Electronics", name: "Mobile control robot car", 
-        desc: "Mobile control robot car.", price: 2500, 
+        desc: "Mobile control robot car.", price: 3500, 
         img: "assets/robot.jpeg", video: "assets/robot.mp4",
         popularity: 95, 
     },
 
     { 
         id: 101, category: "DIY Kits", name: "Robot Car DIY Kit", 
-        desc: "Complete kit: Chassis, Arduino, motors, and code access.", price: 1800, 
+        desc: "Complete kit: Chassis, Arduino, motors, and code access.", price: 2500, 
         img: "assets/robot.jpeg", video: "",
         popularity: 100, 
     },
     
     { 
         id: 2, category: "Electronics", name: "Alcohol Detector", 
-        desc: "0-25V LCD measurement.", price: 1500, 
+        desc: "0-25V LCD measurement.", price: 2000, 
         img: "assets/alcohol.jpeg", video: "",
         popularity: 70, 
     },
@@ -52,7 +52,7 @@ let projects = [
     },
     { 
         id: 5, category: "Electrical", name: "plc system", 
-        desc: "plc automatic system.", price: 20000, 
+        desc: "plc automatic system.", price: 25000, 
         img: "assets/plc system.jpeg", video: "",
         popularity: 88, 
     },
