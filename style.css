@@ -498,8 +498,9 @@ body.dark-mode .home-hero::before {
 }
 
 .search-container input {
-    padding: 7px 12px; /* Slashed the padding to slim down the grey box */
-    width: 260px; /* Narrowed the width slightly */
+    padding: 7px 12px; 
+    width: 100%; /* Allows it to shrink on phones */
+    max-width: 260px; /* Stops it from getting too big on desktops */
     border: none;
     outline: none;
     background: transparent;
@@ -1211,20 +1212,49 @@ body.dark-mode .home-hero::before {
 
 /* --- MOBILE HEADER FIX --- */
 /* This code only activates on screens smaller than 768px (Phones and small tablets) */
+/* --- CLEAN MOBILE ARCHITECTURE --- */
 @media (max-width: 768px) {
+    /* 1. Kills horizontal scrolling permanently */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* 2. Stacks the header neatly */
     header {
-        flex-direction: column !important; /* Stacks the logo and navigation vertically */
-        padding: 15px 10px !important;
-        height: auto !important; /* Lets the header expand to fit the stacked buttons */
+        flex-direction: column;
+        padding: 15px 10px;
+        align-items: center;
+    }
+
+    /* 3. Forces the logo text to shrink and center */
+    .logo {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
     }
     
+    .logo h1 {
+        font-size: 1.8rem; /* Shrinks FUTURETECH */
+    }
+    
+    .logo-sub {
+        display: block; /* Forces AUTOMATION to drop to the next line */
+        font-size: 1rem;
+        margin-top: -5px;
+    }
+
+    /* 4. Wraps the navigation buttons so they don't go off-screen */
     header nav {
-        display: flex !important;
-        flex-wrap: wrap !important; /* Allows buttons to drop to the next line if they run out of space */
-        justify-content: center !important; /* Centers the buttons */
-        gap: 15px !important; /* Adds clean spacing between the buttons */
-        margin-top: 15px !important;
-        width: 100% !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    /* 5. Keeps the Dark Mode icon aligned */
+    #themeToggle {
+        margin-left: 0;
     }
 }
-
