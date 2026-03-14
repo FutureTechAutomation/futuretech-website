@@ -327,6 +327,9 @@ function renderHome() {
             <p class="tagline">Innovative Embedded & Robotics Solutions</p>
             <p class="price-disclaimer"><em>* Prices are flexible. We can discuss and customize according to your budget.</em></p>
             <br> <p class="custom-project-highlight" style="cursor: pointer;" onclick="document.getElementById('custom-promo-section').scrollIntoView({ behavior: 'smooth' })" title="Scroll down to custom projects">💡 <strong>Have a unique idea?</strong> We build custom projects from scratch. Click here to discuss your requirements!</p>
+            <p style="margin-top: 15px; font-size: 1rem; color: #e0e0e0; font-weight: 500;">
+            ⚡ Need fast answers or hardware modifications? <span onclick="contactWhatsApp('General Inquiry')" style="color: cyan; text-decoration: underline; cursor: pointer;">Speak directly to an engineer.</span>
+            </p>
             <br>
             <button class="cta-btn" onclick="document.getElementById('featured').scrollIntoView()">Explore Projects</button>
         </section>
