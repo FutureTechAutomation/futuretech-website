@@ -24,10 +24,16 @@ let projects = [
         img: "assets/robot.jpeg", video: "assets/robot.mp4",
         popularity: 95, 
     },
+    { 
+        id: 1, category: "Electronics", name: "FPV Drone", 
+        desc: "FPV Drone.", price: "50,000-1,00,000", 
+        img: "assets/fpv drone.jpeg", video: "assets/robot.mp4",
+        popularity: 95, 
+    },
 
     { 
         id: 2, category: "Electronics", name: "Quadrocopter Drone", 
-        desc: "Quadrocopter Drone.", price: "25000-50000", 
+        desc: "Quadrocopter Drone.", price: "25,000-50,000", 
         img: "assets/drone.jpeg", video: "",
         popularity: 100, 
     },
@@ -52,19 +58,19 @@ let projects = [
     },
     { 
         id: 6, category: "Electrical", name: "plc system", 
-        desc: "plc automatic system.", price: "25000-35000", 
+        desc: "plc automatic system.", price: "25,000-35,000", 
         img: "assets/plc system.jpeg", video: "",
         popularity: 88, 
     },
     { 
         id: 7, category: "Electrical", name: "automatic power factor", 
-        desc: "automatic power factor.", price: "16000-25000", 
+        desc: "automatic power factor.", price: "16,000-25,000", 
         img: "assets/automatic power factor.jpeg", video: "",
         popularity: 88, 
     },
     { 
         id: 8, category: "Mechatronic", name: "Robotic Arm", 
-        desc: "6-DOF Pick and Place robot.", price: "8500-15000", 
+        desc: "6-DOF Pick and Place robot.", price: "8500-15,000", 
         img: "assets/robotic.jpeg", video: "",
         popularity: 88, 
     },
