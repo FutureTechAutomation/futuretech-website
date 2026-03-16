@@ -20,53 +20,59 @@ function shareProject(projectName) {
 let projects = [
     { 
         id: 1, category: "Electronics", name: "Mobile control robot car", 
-        desc: "Mobile control robot car.", price: 3500, 
+        desc: "Mobile control robot car.", price: 2500-5000, 
         img: "assets/robot.jpeg", video: "assets/robot.mp4",
         popularity: 95, 
     },
 
     { 
-        id: 101, category: "DIY Kits", name: "Robot Car DIY Kit", 
-        desc: "Complete kit: Chassis, Arduino, motors, and code access.", price: 2500, 
-        img: "assets/robot.jpeg", video: "",
+        id: 2, category: "Electronics", name: "Quadrocopter Drone", 
+        desc: "Quadrocopter Drone.", price: 25000, 
+        img: "assets/drone.jpeg", video: "",
         popularity: 100, 
     },
     
     { 
-        id: 2, category: "Electronics", name: "Alcohol Detector", 
-        desc: "0-25V LCD measurement.", price: 2000, 
+        id: 3, category: "Electronics", name: "Alcohol Detector", 
+        desc: "0-25V LCD measurement.", price: 500-2000, 
         img: "assets/alcohol.jpeg", video: "",
         popularity: 70, 
     },
     { 
-        id: 3, category: "Mechanical", name: "Robotic Arm", 
-        desc: "6-DOF Pick and Place robot.", price: 8500, 
+        id: 4, category: "Mechanical", name: "Robotic Arm", 
+        desc: "6-DOF Pick and Place robot.", price: 8500-15000, 
         img: "assets/robotic.jpeg", video: "",
         popularity: 88, 
     },
     { 
-        id: 4, category: "Mechanical", name: "360 degree car", 
+        id: 5, category: "Mechanical", name: "360 degree car", 
         desc: "360 degree roatating car.", price: 8000, 
         img: "assets/360 degree car.jpeg", video: "",
         popularity: 88, 
     },
     { 
-        id: 5, category: "Electrical", name: "plc system", 
-        desc: "plc automatic system.", price: 25000, 
+        id: 6, category: "Electrical", name: "plc system", 
+        desc: "plc automatic system.", price: 25000-35000, 
         img: "assets/plc system.jpeg", video: "",
         popularity: 88, 
     },
     { 
-        id: 6, category: "Electrical", name: "automatic power factor", 
-        desc: "automatic power factor.", price: 16000, 
+        id: 7, category: "Electrical", name: "automatic power factor", 
+        desc: "automatic power factor.", price: 16000-25000, 
         img: "assets/automatic power factor.jpeg", video: "",
         popularity: 88, 
     },
     { 
-        id: 7, category: "Mechatronic", name: "Robotic Arm", 
-        desc: "6-DOF Pick and Place robot.", price: 8500, 
+        id: 8, category: "Mechatronic", name: "Robotic Arm", 
+        desc: "6-DOF Pick and Place robot.", price: 8500-15000, 
         img: "assets/robotic.jpeg", video: "",
         popularity: 88, 
+    },
+    { 
+        id: 101, category: "DIY Kits", name: "Robot Car DIY Kit", 
+        desc: "Complete kit: Chassis, Arduino, motors, and code access.", price: 2500, 
+        img: "assets/robot.jpeg", video: "",
+        popularity: 100, 
     }
     // Add Civil, Electrical, etc., here when ready
 
