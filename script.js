@@ -20,7 +20,7 @@ function shareProject(projectName) {
 let projects = [
     { 
         id: 1, category: "Electronics", name: "Mobile control robot car", 
-        desc: "Mobile control robot car.", price: "2,500-5,000", 
+        desc: "Mobile control robot car.", price: "2500-5000", 
         img: "assets/robot.jpeg", video: "",
         popularity: 95, 
     },
@@ -39,19 +39,19 @@ let projects = [
     },
     { 
         id: 9, category: "Electronics", name: "CNC writing machine", 
-        desc: "CNC writing machine.", price: "8,500-12,000", 
+        desc: "CNC writing machine.", price: "8500-12000", 
         img: "assets/cnc writing machine.jpeg", video: "",
         popularity: 100, 
     },
     { 
         id: 4, category: "Mechanical", name: "Robotic Arm", 
-        desc: "6-DOF Pick and Place robot.", price: "8,500-15,000", 
+        desc: "6-DOF Pick and Place robot.", price: "8500-15000", 
         img: "assets/robotic.jpeg", video: "",
         popularity: 88, 
     },
     { 
         id: 5, category: "Mechanical", name: "360 degree car", 
-        desc: "360 degree roatating car.", price: 8,000, 
+        desc: "360 degree roatating car.", price: 8000, 
         img: "assets/360 degree car.jpeg", video: "",
         popularity: 88, 
     },
@@ -69,19 +69,19 @@ let projects = [
     },
     { 
         id: 8, category: "Mechatronic", name: "Robotic Arm", 
-        desc: "6-DOF Pick and Place robot.", price: "8,500-15,000", 
+        desc: "6-DOF Pick and Place robot.", price: "8500-15000", 
         img: "assets/robotic.jpeg", video: "",
         popularity: 88, 
     },
     { 
         id: 101, category: "DIY Kits", name: "Robot Car DIY Kit", 
-        desc: "Complete kit: Chassis, Arduino, motors, and code access.", price: 2,500, 
+        desc: "Complete kit: Chassis, Arduino, motors, and code access.", price: 2500, 
         img: "assets/robot.jpeg", video: "",
         popularity: 100, 
     },
     { 
         id: 3, category: "Electronics", name: "Alcohol Detector", 
-        desc: "0-25V LCD measurement.", price: "500-2,000", 
+        desc: "0-25V LCD measurement.", price: "500-2000", 
         img: "assets/alcohol detector.jpeg", video: "",
         popularity: 70, 
     }
