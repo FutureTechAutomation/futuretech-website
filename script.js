@@ -27,7 +27,7 @@ let projects = [
     { 
         id: 1, category: "Electronics", name: "FPV Drone", 
         desc: "FPV Drone.", price: "50,000-1,00,000", 
-        img: "assets/fpv drone.jpeg", video: "assets/robot.mp4",
+        img: "assets/fpv drone.jpeg", video: "",
         popularity: 95, 
     },
 
