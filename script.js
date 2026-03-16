@@ -79,6 +79,12 @@ let projects = [
         desc: "Complete kit: Chassis, Arduino, motors, and code access.", price: 2500, 
         img: "assets/robot.jpeg", video: "",
         popularity: 100, 
+    },
+    { 
+        id: 9, category: "Electronics", name: "CNC writing machine", 
+        desc: "CNC writing machine.", price: "8500-12000", 
+        img: "assets/cnc writing machine.jpeg", video: "",
+        popularity: 100, 
     }
     // Add Civil, Electrical, etc., here when ready
 
