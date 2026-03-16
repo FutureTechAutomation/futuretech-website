@@ -21,7 +21,7 @@ let projects = [
     { 
         id: 1, category: "Electronics", name: "Mobile control robot car", 
         desc: "Mobile control robot car.", price: "2500-5000", 
-        img: "assets/robot.jpeg", video: "assets/robot.mp4",
+        img: "assets/robot.jpeg", video: "",
         popularity: 95, 
     },
     { 
