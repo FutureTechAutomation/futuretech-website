@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://futuretechautomation.in/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+</urlset>
+```
+Save it.
+
+---
+
+**Step 2: Create robots.txt**
+
+Same folder → create `robots.txt` → paste:
+```
+User-agent: *
+Allow: /
+Sitemap: https://futuretechautomation.in/sitemap.xml
+```
+Save it.
+
+---
+
+**Step 3: Submit sitemap in Google Search Console**
+
+1. Click **Sitemaps** on left side
+2. In the box type:
+```
+sitemap.xml
