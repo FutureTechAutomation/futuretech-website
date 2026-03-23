@@ -19,19 +19,65 @@ body {
 
 /* HEADER */
 
+/* --- NEW TWO-TIER HEADER --- */
 header {
     background: linear-gradient(135deg, #0033aa 0%, #0044cc 100%);
     color: white;
-    padding: 15px 5%; /* Increased padding to make the blue bar properly proportioned */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    padding: 0; /* Padding is now handled by the inner tiers */
 }
 
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+
+/* --- CATEGORY PILL BAR (The Scrollable Row) --- */
+.category-pill-bar {
+    background: rgba(0, 0, 0, 0.15); /* Slightly darker strip to separate from header */
+    padding: 10px 5%;
+    display: flex;
+    gap: 12px;
+    overflow-x: auto; /* Allows smooth horizontal scrolling on mobile */
+    white-space: nowrap; /* Forces pills to stay on one horizontal line */
+    -ms-overflow-style: none;  /* Hides ugly scrollbars in IE */
+    scrollbar-width: none;  /* Hides ugly scrollbars in Firefox */
+}
+
+/* Hides ugly scrollbars in Chrome/Safari */
+.category-pill-bar::-webkit-scrollbar {
+    display: none; 
+}
+
+.cat-pill {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    flex-shrink: 0; /* Mathematically prevents the pills from squishing */
+}
+
+.cat-pill:hover {
+    background: white;
+    color: var(--primary);
+}
+
+/* Dark mode support for the pills */
+body.dark-mode .cat-pill:hover {
+    background: #333;
+    color: cyan;
+    border-color: cyan;
+}
 .logo {
     display: flex;
     align-items: center; /* Centers items securely without baseline stretching */
