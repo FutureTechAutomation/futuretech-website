@@ -1266,11 +1266,13 @@ body.dark-mode .home-hero::before {
         width: 100%;
     }
 
-    /* 2. Stacks the header neatly */
-    header {
-        flex-direction: column;
-        padding: 15px 10px;
-        align-items: center;
+    /* 2. Stacks the top header neatly */
+    .header-main {
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 15px 10px !important;
+        align-items: center !important;
+        gap: 15px !important;
     }
 
     /* 3. Forces the logo text to shrink and center */
