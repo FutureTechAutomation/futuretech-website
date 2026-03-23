@@ -415,7 +415,7 @@ function renderHome() {
 
     html += `
             </div>
-            <div id="custom-promo-section" class="view-all-container" style="scroll-margin-top: 120px; background: rgba(0, 68, 204, 0.05); border: 2px dashed var(--primary); border-radius: 10px; max-width: 800px; margin: 40px auto 0 auto; padding: 30px;">
+            <div id="custom-promo-section" class="view-all-container" style="scroll-margin-top: 160px; background: rgba(0, 68, 204, 0.05); border: 2px dashed var(--primary); border-radius: 10px; max-width: 800px; margin: 40px auto 0 auto; padding: 30px;">
                 <p class="view-all-text" style="color: var(--primary);">Didn't find what you were looking for?</p>
                 <p style="margin-b  ottom: 20px; color: var(--dark); font-size: 0.95rem;">We build custom engineering projects tailored to your exact college or industry requirements.</p>
                 <button class="view-all-btn" onclick="openCustomModal()">Request Custom Project</button>
