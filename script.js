@@ -224,7 +224,7 @@ function sendInquiry() {
 
     // Encode and open WhatsApp
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/917385888199?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/919403560585?text=${encodedMessage}`, '_blank');
     
     // Close the modal and reset the form
     closeInquiry();
@@ -594,7 +594,7 @@ function sendCustomInquiry() {
 
     // Encode and launch WhatsApp
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/917385888199?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/919403560585?text=${encodedMessage}`, '_blank');
     
     // Clear the form after sending
     closeCustomModal();
