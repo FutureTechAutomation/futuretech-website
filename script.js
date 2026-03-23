@@ -167,7 +167,9 @@ function renderCategory(catName, sortBy = 'default') {
     }
     
     app.innerHTML = html;
-
+    
+    app.innerHTML = html;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     
 }
 
@@ -332,6 +334,8 @@ function executeSearch(searchQuery = null, sortBy = 'default') {
     }
 
     app.innerHTML = html;
+    app.innerHTML = html;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function renderHome() {
@@ -377,7 +381,7 @@ function renderHome() {
                 </div>
             </div>
         </section>
-        <section id="about-us-section" class="home-about" style="scroll-margin-top: 100px; padding-top: 10px; padding-bottom: 40px;">
+        <section id="about-us-section" class="home-about" style="scroll-margin-top: 160px; padding-top: 10px; padding-bottom: 40px;">
             <div class="about-content" style="max-width: 800px; margin: 0 auto; text-align: center;">
                 <h2 style="color: var(--primary); margin-top: 0;">About FutureTech Automation</h2>
                 <p style="font-size: 1.05rem; color: var(--dark); line-height: 1.6; margin-top: 15px;">
@@ -444,6 +448,8 @@ function renderHome() {
     `;
 
     app.innerHTML = html;
+    app.innerHTML = html;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function navigateToAbout() {
