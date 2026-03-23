@@ -24,34 +24,36 @@
 <body>
 
 <header>
-    <div class="logo" onclick="renderHome()">
-        <img src="assets/FTA_PNG.png" alt="FTA Logo" class="header-logo">
-        <h1>FUTURETECH</h1>
-        <span class="logo-sub">Automation</span>
-    </div>
-    
-    <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search projects (e.g. Arduino, IoT)..." onkeyup="handleSearch(event)">
-        <button onclick="executeSearch()">🔍</button>
-    </div>
-    <nav>
-        <a href="#" onclick="renderCategory('DIY Kits')" style="color: var(--success); font-weight: bold; border: 1px solid var(--success); padding: 5px 10px; border-radius: 5px;">📦 DIY Kits</a>
+    <div class="header-main">
+        <div class="logo" onclick="renderHome()">
+            <img src="assets/FTA_PNG.png" alt="FutureTech Logo" class="header-logo">
+            <div>
+                <h1>FUTURETECH</h1>
+                <div class="logo-sub">AUTOMATION</div>
+            </div>
+        </div>
         
-        <div class="dropdown">
-    <button class="dropbtn" onclick="void(0)">📑 Categories <span style="font-size: 0.7rem; margin-left: 5px;">▼</span></button>
-    <div class="dropdown-content">
-        <a href="#" onclick="renderCategory('Electronics')">🔌 Electronics</a>
-        <a href="#" onclick="renderCategory('Electrical')">⚡ Electrical</a>
-        <a href="#" onclick="renderCategory('Computer Science')">💻 Computer Science</a>
-        <a href="#" onclick="renderCategory('AI')">🤖 AI</a>
-        <a href="#" onclick="renderCategory('Mechatronics')">⚙️ Mechatronics/ Robotics</a>
-        <a href="#" onclick="renderCategory('Mechanical')">🔧 Mechanical</a>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search projects (e.g. Arduino, IoT)..." onkeypress="handleSearch(event)">
+            <button onclick="executeSearch()">🔍</button>
+        </div>
+
+        <nav>
+            <a href="javascript:void(0)" onclick="navigateToAbout()">About</a>
+            <a href="javascript:void(0)" onclick="openContact()">Contact</a>
+            <button id="themeToggle" onclick="toggleDarkMode()">🌙</button>
+        </nav>
     </div>
-    </div>   
-        <a href="#" onclick="navigateToAbout()">About</a>
-        <a href="#" onclick="openContact()">Contact</a>
-        <button id="themeToggle" onclick="toggleDarkMode()" style="background:none; border:none; color:white; cursor:pointer; font-size:1.2rem;">🌙</button>
-    </nav>
+
+    <div class="category-pill-bar">
+        <button class="cat-pill" onclick="renderCategory('DIY Kits')">📦 DIY Kits</button>
+        <button class="cat-pill" onclick="renderCategory('Electronics')">⚡ Electronics</button>
+        <button class="cat-pill" onclick="renderCategory('Electrical')">🔌 Electrical</button>
+        <button class="cat-pill" onclick="renderCategory('Computer Science')">💻 Computer Science</button>
+        <button class="cat-pill" onclick="renderCategory('Mechanical')">🔧 Mechanical</button>
+        <button class="cat-pill" onclick="renderCategory('AI')">🤖 AI&DS</button>
+        <button class="cat-pill" onclick="renderCategory('Mechatronics')">⚙️ Mechatronics</button> 
+    </div>
 </header>
 
 <main id="app"></main>
