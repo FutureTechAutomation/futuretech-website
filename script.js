@@ -339,21 +339,57 @@ function executeSearch(searchQuery = null, sortBy = 'default') {
 }
 
 function renderHome() {
-    // Get the first 4 products to show as "Featured"
-    const featuredProducts = projects.slice(0, 4);
+    // Get the top 4 most popular products to show as "Featured"
+    const featuredProducts = [...projects].sort((a, b) => b.popularity - a.popularity).slice(0, 4);
 
     let html = `
         <section class="home-hero">
             <h1 class="brand-big">FUTURETECH</h1>
             <p class="tagline">Innovative Embedded & Robotics Solutions</p>
             <p class="price-disclaimer"><em>* Prices are flexible. We can discuss and customize according to your budget.</em></p>
-            <br> <p class="custom-project-highlight" style="cursor: pointer;" onclick="document.getElementById('custom-promo-section').scrollIntoView({ behavior: 'smooth' })" title="Scroll down to custom projects">💡 <strong>Have a unique idea?</strong> We build custom projects from scratch. Click here to discuss your requirements!</p>
+            <br> 
+            <p class="custom-project-highlight" style="cursor: pointer;" onclick="document.getElementById('custom-promo-section').scrollIntoView({ behavior: 'smooth' })" title="Scroll down to custom projects">💡 <strong>Have a unique idea?</strong> We build custom projects from scratch. Click here to discuss your requirements!</p>
+            
             <p style="margin-top: 15px; font-size: 1rem; color: #e0e0e0; font-weight: 500;">
-            ⚡ Need fast answers or hardware modifications? <span onclick="contactWhatsApp('General Inquiry')" style="color: cyan; text-decoration: underline; cursor: pointer;">Speak directly to an engineer.</span>
+                ⚡ Need fast answers or hardware modifications? <span onclick="contactWhatsApp('General Inquiry')" style="color: cyan; text-decoration: underline; cursor: pointer;">Speak directly to an engineer.</span>
             </p>
             <br>
-            <button class="cta-btn" onclick="document.getElementById('featured').scrollIntoView()">Explore Projects</button>
+            <button class="cta-btn" onclick="document.getElementById('featured').scrollIntoView({ behavior: 'smooth' })">Explore Projects</button>
         </section>
+
+        <section id="featured" class="home-products" style="scroll-margin-top: 160px;">
+            <div style="width: 90%; max-width: 1200px; margin: 0 auto; text-align: left;">
+                <h2 style="color: var(--primary); margin-bottom: 10px; margin-top: 30px;">Featured Solutions</h2>
+            </div>
+            <div class="mini-product-grid">
+    `;
+
+    // Loop through the featured products
+    featuredProducts.forEach(p => {
+        html += `
+            <div class="mini-card">
+                <div class="mini-media">
+                    <img src="${p.img}" alt="${p.name}" onerror="this.onerror=null; this.src='https://via.placeholder.com/150'">
+                </div>
+                <h4>${p.name}</h4>
+                <div style="font-size: 0.85rem; color: #666; font-weight: bold; margin-bottom: 5px;">
+                    🏷️ ${p.category}
+                </div>
+                <p class="price">Starting at: ₹${p.price}</p>
+                <button onclick="contactWhatsApp('${p.name}')">Inquiry</button>
+            </div>
+        `;
+    });
+
+    html += `
+            </div>
+            <div id="custom-promo-section" class="view-all-container" style="scroll-margin-top: 160px; background: rgba(0, 68, 204, 0.05); border: 2px dashed var(--primary); border-radius: 10px; max-width: 800px; margin: 40px auto 0 auto; padding: 30px;">
+                <p class="view-all-text" style="color: var(--primary);">Didn't find what you were looking for?</p>
+                <p style="margin-bottom: 20px; color: var(--dark); font-size: 0.95rem;">We build custom engineering projects tailored to your exact college or industry requirements.</p>
+                <button class="view-all-btn" onclick="openCustomModal()">Request Custom Project</button>
+            </div>
+        </section>
+
         <section class="deliverables-section" style="padding: 50px 5% 10px 5%; text-align: center; background: #ffffff;">
             <h2 style="color: var(--primary); margin-bottom: 10px;">What's Included in Your Project?</h2>
             <p style="color: #666; margin-bottom: 40px; font-size: 1rem;">Everything you need to submit and present your project with confidence.</p>
@@ -381,6 +417,7 @@ function renderHome() {
                 </div>
             </div>
         </section>
+
         <section id="about-us-section" class="home-about" style="scroll-margin-top: 160px; padding-top: 10px; padding-bottom: 40px;">
             <div class="about-content" style="max-width: 800px; margin: 0 auto; text-align: center;">
                 <h2 style="color: var(--primary); margin-top: 0;">About FutureTech Automation</h2>
@@ -390,41 +427,6 @@ function renderHome() {
             </div>
         </section>
 
-        <section id="featured" class="home-products" style="scroll-margin-top: 100px;">
-            <div style="width: 90%; max-width: 1200px; margin: 0 auto; text-align: left;">
-                <h2 style="color: var(--primary); margin-bottom: 10px; margin-top: 30px;">Featured Solutions</h2>
-            </div>
-            <div class="mini-product-grid">
-    `;
-
-    featuredProducts.forEach(p => {
-        html += `
-            <div class="mini-card">
-                <div class="mini-media">
-                    <img src="${p.img}" alt="${p.name}" onerror="this.onerror=null; this.src='https://via.placeholder.com/150'">
-                </div>
-                <h4>${p.name}</h4>
-                <div style="font-size: 0.85rem; color: #666; font-weight: bold; margin-bottom: 5px;">
-                    🏷️ ${p.category}
-                </div>
-                <p class="price">Starting at: ₹${p.price}</p>
-                <button onclick="contactWhatsApp('${p.name}')">Inquiry</button>
-            </div>
-        `;
-    });
-
-    html += `
-            </div>
-            <div id="custom-promo-section" class="view-all-container" style="scroll-margin-top: 160px; background: rgba(0, 68, 204, 0.05); border: 2px dashed var(--primary); border-radius: 10px; max-width: 800px; margin: 40px auto 0 auto; padding: 30px;">
-                <p class="view-all-text" style="color: var(--primary);">Didn't find what you were looking for?</p>
-                <p style="margin-b  ottom: 20px; color: var(--dark); font-size: 0.95rem;">We build custom engineering projects tailored to your exact college or industry requirements.</p>
-                <button class="view-all-btn" onclick="openCustomModal()">Request Custom Project</button>
-            </div>
-        </section>
-    `;
-
-    // Trust-building section to replace the duplicate About block
-    html += `
         <section class="home-about trust-section">
             <div class="about-content">
                 <h2 style="color: var(--primary);">Why Choose FutureTech?</h2>
@@ -444,10 +446,8 @@ function renderHome() {
                 </div>
             </div>
         </section>
-        
     `;
 
-    app.innerHTML = html;
     app.innerHTML = html;
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
