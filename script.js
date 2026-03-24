@@ -420,8 +420,8 @@ function renderHome() {
 
         <section id="about-us-section" class="home-about" style="scroll-margin-top: 160px; padding-top: 10px; padding-bottom: 40px;">
             <div class="about-content" style="max-width: 800px; margin: 0 auto; text-align: center;">
-                <h2 style="color: var(--primary); margin-top: 0;">About FutureTech Automation</h2>
-                <p style="font-size: 1.05rem; color: var(--dark); line-height: 1.6; margin-top: 15px;">
+                <h2 style="margin-top: 0;">About FutureTech Automation</h2>
+                <p style="font-size: 1.05rem; line-height: 1.6; margin-top: 15px;">
                      FutureTech Automation is a multidisciplinary engineering company delivering end-to-end hardware and software solutions. We specialize in Electronics, Mechatronics, IoT, and AI-driven systems. Whether you are a final-year student needing a ready-to-submit academic project or an industry professional requiring custom automation, we handle everything from circuit design to final assembly. We transform your complex ideas into reliable, real-world technology.
                 </p>
             </div>
@@ -429,7 +429,7 @@ function renderHome() {
 
         <section class="home-about trust-section">
             <div class="about-content">
-                <h2 style="color: var(--primary);">Why Choose FutureTech?</h2>
+                <h2>Why Choose FutureTech?</h2>
                 <div class="trust-grid">
                     <div class="trust-card">
                         <h3>🛠️ Tested Hardware</h3>
