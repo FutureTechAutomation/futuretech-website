@@ -1216,6 +1216,28 @@ body.dark-mode .home-hero::before {
         width: 100%;
     }
 
+    /* --- ABOUT SECTION COLOR MANAGEMENT --- */
+/* Default Light Mode Colors */
+.home-about h2 {
+    color: var(--primary);
+}
+.home-about p {
+    color: var(--dark);
+}
+
+/* Dark Mode Overrides */
+body.dark-mode .home-about h2 {
+    color: cyan; /* Pops cleanly against the dark background */
+}
+body.dark-mode .home-about p {
+    color: #e0e0e0; /* High-contrast light grey for readability */
+}
+
+/* --- ABOUT SECTION DARK MODE BACKGROUND OVERRIDE --- */
+body.dark-mode #about-us-section {
+    background-color: #1e1e1e !important;
+}
+    
     /* 2. Stacks the top header neatly */
     .header-main {
         display: flex !important;
