@@ -1206,17 +1206,7 @@ body.dark-mode .home-hero::before {
     opacity: 0.25 !important; 
 }
 
-/* --- MOBILE HEADER FIX --- */
-/* This code only activates on screens smaller than 768px (Phones and small tablets) */
-/* --- CLEAN MOBILE ARCHITECTURE --- */
-@media (max-width: 768px) {
-    /* 1. Kills horizontal scrolling permanently */
-    html, body {
-        overflow-x: hidden;
-        width: 100%;
-    }
-
-    /* --- ABOUT SECTION COLOR MANAGEMENT --- */
+/* --- ABOUT SECTION COLOR MANAGEMENT --- */
 /* Default Light Mode Colors */
 .home-about h2 {
     color: var(--primary);
@@ -1237,7 +1227,17 @@ body.dark-mode .home-about p {
 body.dark-mode #about-us-section {
     background-color: #1e1e1e !important;
 }
-    
+
+/* --- MOBILE HEADER FIX --- */
+/* This code only activates on screens smaller than 768px (Phones and small tablets) */
+/* --- CLEAN MOBILE ARCHITECTURE --- */
+@media (max-width: 768px) {
+    /* 1. Kills horizontal scrolling permanently */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
     /* 2. Stacks the top header neatly */
     .header-main {
         display: flex !important;
