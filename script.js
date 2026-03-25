@@ -44,7 +44,7 @@ let projects = [
         popularity: 100, 
     },
     { 
-        id: 4, category: "Mechanical", name: "Robotic Arm", 
+        id: 4, category: "Mechanical, Mechatronics", name: "Robotic Arm", 
         desc: "6-DOF Pick and Place robot integrating mechanical design with embedded electronic control.", price: "8500-15000", 
         img: "assets/robotic.jpeg", video: "",
         popularity: 88, 
