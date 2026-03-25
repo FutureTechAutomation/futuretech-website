@@ -89,7 +89,7 @@ const app = document.getElementById('app');
 
 function renderCategory(catName, sortBy = 'default') {
     // Filter first
-    let filtered = projects.filter(p => p.category === catName);
+    let filtered = projects.filter(p => p.category.includes(catName));
 
     // Apply Sorting only if there are items to sort
     if (filtered.length > 0) {
