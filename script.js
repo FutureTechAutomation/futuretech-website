@@ -20,7 +20,7 @@ function shareProject(projectName) {
 let projects = [
     { 
         id: 1, category: "Electronics", name: "Mobile control robot car", 
-        desc: "Mobile control robot car.", price: "2500-5000", 
+        desc: "Bluetooth-controlled Arduino chassis with L298N motor drivers and Android app integration.", price: "2500-5000", 
         img: "assets/robot.jpeg", video: "",
         popularity: 95, 
     },
@@ -45,32 +45,26 @@ let projects = [
     },
     { 
         id: 4, category: "Mechanical", name: "Robotic Arm", 
-        desc: "6-DOF Pick and Place robot.", price: "8500-15000", 
+        desc: "6-DOF Pick and Place robot integrating mechanical design with embedded electronic control.", price: "8500-15000", 
         img: "assets/robotic.jpeg", video: "",
         popularity: 88, 
     },
     { 
         id: 5, category: "Mechanical", name: "360 degree car", 
-        desc: "360 degree roatating car.", price: 8000, 
+        desc: "Omnidirectional mecanum wheel rover capable of seamless 360-degree zero-radius turns.", price: 8000, 
         img: "assets/360 degree car.jpeg", video: "",
         popularity: 88, 
     },
     { 
         id: 6, category: "Electrical", name: "plc system", 
-        desc: "plc automatic system.", price: "25,000-35,000", 
+        desc: "Industrial-grade PLC automation prototype complete with ladder logic and relay control.", price: "25,000-35,000", 
         img: "assets/plc system.jpeg", video: "",
         popularity: 88, 
     },
     { 
         id: 7, category: "Electrical", name: "automatic power factor", 
-        desc: "automatic power factor.", price: "16,000-25,000", 
+        desc: "APFC panel prototype for real-time power factor measurement and automatic capacitor switching.", price: "16,000-25,000", 
         img: "assets/automatic power factor.jpeg", video: "",
-        popularity: 88, 
-    },
-    { 
-        id: 8, category: "Mechatronic", name: "Robotic Arm", 
-        desc: "6-DOF Pick and Place robot.", price: "8500-15000", 
-        img: "assets/robotic.jpeg", video: "",
         popularity: 88, 
     },
     { 
