@@ -22,7 +22,7 @@ let projects = [
         id: 1, category: "Electronics", name: "Mobile control robot car", 
         desc: "Bluetooth-controlled Arduino chassis with L298N motor drivers and Android app integration.", price: "2500-5000", 
         img: "assets/robot.jpeg", video: "",
-        popularity: 95, 
+        popularity: 90, 
     },
     { 
         id: 10, category: "Electronics", name: "FPV Drone", 
@@ -84,7 +84,7 @@ let projects = [
         desc: "Remote-controlled telepresence rover enabling doctors to conduct virtual patient rounds and real-time video consultations via a web interface.", 
         price: "₹6,000 - ₹12,000", 
         img: "assets/Virtual Doctor Robot.jpeg", video: "",
-        popularity: 90, 
+        popularity: 100, 
     },
     { 
         id: 12, category: "Electronics", name: "IoT Toll Booth Manager", 
