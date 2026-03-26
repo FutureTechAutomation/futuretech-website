@@ -118,7 +118,7 @@ let projects = [
         id: 16, category: "Electronics", name: "IoT Traffic Controller", 
         desc: "Smart traffic management grid that allows centralized remote override of junction lights for emergency vehicles and logs real-time traffic data.", 
         price: "3,000 - 5,000", 
-        img: "assets/Traffic Signal Monitoring & Controller System.jpeg", video: "",
+        img: "assets/Traffic Signal Monitoring Controller System.jpeg", video: "",
         popularity: 82, 
     },
     { 
