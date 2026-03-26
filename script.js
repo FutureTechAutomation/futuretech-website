@@ -78,6 +78,62 @@ let projects = [
         desc: "0-25V LCD measurement.", price: "500-2000", 
         img: "assets/alcohol detector.jpeg", video: "",
         popularity: 70, 
+    },
+    { 
+        id: 11, category: "Electronics", name: "IoT Virtual Doctor Robot", 
+        desc: "Remote-controlled telepresence rover enabling doctors to conduct virtual patient rounds and real-time video consultations via a web interface.", 
+        price: "Starting from ₹6,000 - ₹12,000", 
+        img: "assets/Virtual Doctor Robot.jpeg", video: "",
+        popularity: 90, 
+    },
+    { 
+        id: 12, category: "Electronics", name: "IoT Toll Booth Manager", 
+        desc: "Cloud-connected automated toll collection system that logs vehicle data, deducts balances in real-time, and operates a mechanical boom barrier.", 
+        price: "Starting from ₹3,000 - ₹5,000", 
+        img: "assets/Based Toll Booth Manager System.jpeg", video: "",
+        popularity: 85, 
+    },
+    { 
+        id: 13, category: "Electrical", name: "IoT Smart Automation", 
+        desc: "Centralized smart relay system allowing users to remotely monitor and control heavy AC appliances for homes or industries using a smartphone dashboard.", 
+        price: "Starting from ₹2,500 - ₹4,500", 
+        img: "assets/Home Automation.jpeg", video: "",
+        popularity: 95, 
+    },
+    { 
+        id: 14, category: "Mechatronics", name: "IoT Antenna Positioning", 
+        desc: "Precision motor-driven mechanism that allows operators to remotely adjust and monitor the directional azimuth of an antenna via an IoT cloud platform.", 
+        price: "Starting from ₹3,500 - ₹6,000", 
+        img: "assets/Based Antenna Positioning System.jpeg", video: "",
+        popularity: 80, 
+    },
+    { 
+        id: 15, category: "Electrical", name: "IoT Solar Power Monitor", 
+        desc: "Real-time energy analytics dashboard that measures voltage, current, and power output of solar panels and logs the telemetry to a cloud server.", 
+        price: "Starting from ₹3,000 - ₹5,500", 
+        img: "assets/Solar Power Monitoring System.jpeg", video: "",
+        popularity: 88, 
+    },
+    { 
+        id: 16, category: "Electronics", name: "IoT Traffic Controller", 
+        desc: "Smart traffic management grid that allows centralized remote override of junction lights for emergency vehicles and logs real-time traffic data.", 
+        price: "Starting from ₹2,500 - ₹4,500", 
+        img: "assets/Traffic Signal Monitoring & Controller System.jpeg", video: "",
+        popularity: 82, 
+    },
+    { 
+        id: 17, category: "Electrical", name: "Underground Cable Fault Detector", 
+        desc: "Diagnostic testing unit that calculates the exact distance of a short circuit in buried cables using voltage drop analysis and alerts operators online.", 
+        price: "Starting from ₹2,500 - ₹4,000", 
+        img: "assets/Underground Cable Fault Detector Project.jpeg", video: "",
+        popularity: 92, 
+    },
+    { 
+        id: 18, category: "Electronics", name: "IoT IV Bag Monitor", 
+        desc: "Healthcare safety monitor that tracks liquid levels in hospital IV drips and instantly sends a cloud-based alert to nursing staff before it runs dry.", 
+        price: "Starting from ₹2,500 - ₹4,500", 
+        img: "assets/IV Bag Monitoring and Alert System.jpeg", video: "",
+        popularity: 86, 
     }
     // Add Civil, Electrical, etc., here when ready
 
