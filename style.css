@@ -993,53 +993,52 @@ body.dark-mode .whatsapp-disclaimer {
     color: #e0e0e0; /* High contrast light text for readability */
 }
 
-/* --- TRUST SECTION (WHY CHOOSE US) --- */
-.trust-section {
-    background: var(--light);
-    border-top: 1px solid #ddd;
-}
-
+/* --- TRUST SECTION GRID & CARDS --- */
 .trust-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 25px;
-    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px; /* Tightens the space between the cards */
+    margin-top: 20px; /* Pulls the cards closer to the title */
 }
 
 .trust-card {
-    flex: 1;
-    min-width: 250px;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    background: #f8f9fa; /* Clean light gray for contrast */
+    padding: 40px 20px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #eaeaea;
+    transition: transform 0.3s;
+    /* Forces the content to center vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.trust-card:hover {
+    transform: translateY(-5px); /* Small hover effect for premium feel */
 }
 
 .trust-card h3 {
-    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--primary);
     font-size: 1.2rem;
-    color: var(--dark);
 }
 
 .trust-card p {
     font-size: 0.95rem;
-    color: var(--dark);
+    line-height: 1.6;
     margin: 0;
 }
 
-/* --- DARK MODE OVERRIDES FOR TRUST SECTION --- */
-body.dark-mode .trust-section {
-    background: #1a1a1a;
-    border-top-color: #333;
-}
-
+/* Dark Mode Overrides for Trust Cards */
 body.dark-mode .trust-card {
-    background: #2a2a2a;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    background: #222222;
+    border-color: #333333;
 }
-
+body.dark-mode .trust-card h3 {
+    color: cyan;
+}
 body.dark-mode .trust-card h3,
 body.dark-mode .trust-card p {
     color: #eee; /* High contrast light text */
