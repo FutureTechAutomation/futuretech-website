@@ -83,7 +83,7 @@ let projects = [
         id: 11, category: "Electronics", name: "IoT Virtual Doctor Robot", 
         desc: "Remote-controlled telepresence rover enabling doctors to conduct virtual patient rounds and real-time video consultations via a web interface.", 
         price: "6,000 - 12,000", 
-        img: "assets/Virtual Doctor Robot.jpeg", video: "",
+        img: "assets/Virtual Doctor Robot.jpg", video: "",
         popularity: 100, 
     },
     { 
@@ -407,7 +407,7 @@ function renderHome() {
             <button class="cta-btn" onclick="document.getElementById('featured').scrollIntoView({ behavior: 'smooth' })">Explore Projects</button>
         </section>
 
-        <section id="featured" class="home-products" style="scroll-margin-top: 160px;">
+        <section id="featured" class="home-products" style="scroll-margin-top: 175px;">
             <div style="width: 90%; max-width: 1200px; margin: 0 auto; text-align: left;">
                 <h2 style="color: var(--primary); margin-bottom: 10px; margin-top: 30px;">Featured Solutions</h2>
             </div>
@@ -433,7 +433,12 @@ function renderHome() {
 
     html += `
             </div>
-            <div id="custom-promo-section" class="view-all-container" style="scroll-margin-top: 160px; background: rgba(0, 68, 204, 0.05); border: 2px dashed var(--primary); border-radius: 10px; max-width: 800px; margin: 40px auto 0 auto; padding: 30px;">
+            <div style="text-align: center; margin-top: 25px; padding-bottom: 20px;">
+                <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" style="background: transparent; border: 2px solid var(--primary); color: var(--primary); padding: 10px 25px; border-radius: 25px; font-weight: bold; font-size: 1rem; cursor: pointer;">
+                    🔍 Browse All Categories ⬆️
+                </button>
+            </div>
+            <div id="custom-promo-section" class="view-all-container" style="scroll-margin-top: 180px; background: rgba(0, 68, 204, 0.05); border: 2px dashed var(--primary); border-radius: 10px; max-width: 800px; margin: 40px auto 0 auto; padding: 30px;">
                 <p class="view-all-text" style="color: var(--primary);">Didn't find what you were looking for?</p>
                 <p style="margin-bottom: 20px; color: var(--dark); font-size: 0.95rem;">We build custom engineering projects tailored to your exact college or industry requirements.</p>
                 <button class="view-all-btn" onclick="openCustomModal()">Request Custom Project</button>
@@ -468,7 +473,7 @@ function renderHome() {
             </div>
         </section>
 
-        <section id="about-us-section" class="home-about" style="scroll-margin-top: 160px; padding-top: 10px; padding-bottom: 40px;">
+        <section id="about-us-section" class="home-about" style="scroll-margin-top: 170px; padding-top: 10px; padding-bottom: 40px;">
             <div class="about-content" style="max-width: 800px; margin: 0 auto; text-align: center;">
                 <h2 style="margin-top: 0;">About FutureTech Automation</h2>
                 <p style="font-size: 1.05rem; line-height: 1.6; margin-top: 15px;">
@@ -477,8 +482,8 @@ function renderHome() {
             </div>
         </section>
 
-        <section class="home-about trust-section">
-            <div class="about-content">
+        <section class="home-about trust-section" style="padding-top: 20px; padding-bottom: 10px;">
+            <div class="about-content" style="max-width: 1000px; margin: 0 auto; text-align: center; padding: 0 5%;">
                 <h2>Why Choose FutureTech?</h2>
                 <div class="trust-grid">
                     <div class="trust-card">
