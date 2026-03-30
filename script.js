@@ -291,6 +291,20 @@ function renderCategory(catName, sortBy = 'default') {
             `;
         });
         html += `</div>`;
+
+            // --- THE CATEGORY SAFETY NET ---
+    html += `
+        <div style="text-align: center; padding: 40px 5% 60px 5%;">
+            <div style="background: rgba(0, 68, 204, 0.05); border: 2px dashed var(--primary); border-radius: 10px; max-width: 800px; margin: 0 auto; padding: 30px;">
+                <p style="color: var(--primary); font-size: 1.2rem; font-weight: bold; margin-bottom: 10px;">Didn't find the perfect ${catName} project?</p>
+                <p style="margin-bottom: 20px; color: var(--dark); font-size: 0.95rem;">We can build it from scratch. Tell us your exact requirements.</p>
+                <button onclick="openCustomModal()" style="background: var(--primary); color: white; border: none; padding: 12px 25px; border-radius: 5px; font-weight: bold; font-size: 1rem; cursor: pointer; transition: 0.3s;">
+                    Request Custom ${catName} Project
+                </button>
+            </div>
+        </div>
+    `;
+        
     }
     
     app.innerHTML = html;
