@@ -134,8 +134,85 @@ let projects = [
         price: "3,000 - 5,000", 
         img: "assets/IV Bag Monitoring and Alert System.jpeg", video: "",
         popularity: 86, 
-    }
-    // Add Civil, Electrical, etc., here when ready
+    },
+    // --- COMPUTER SCIENCE (CS) PROJECTS ---
+    { 
+        id: 19, category: "Computer Science", name: "Hospital Management System", 
+        desc: "Full-stack web application (MERN/PHP) featuring patient registration, doctor appointment scheduling, and secure digital medical record storage.", 
+        price: 3500, 
+        img: "assets/hospital management system.jpeg", video: "",
+        popularity: 85, 
+    },
+    { 
+        id: 20, category: "Computer Science", name: "Blockchain E-Voting Portal", 
+        desc: "Secure, decentralized voting simulator utilizing smart contracts to ensure immutable, tamper-proof election data and transparent cryptographic tallying.", 
+        price: 5000, 
+        img: "assets/Blockchain E-Voting Portal.jpeg", video: "",
+        popularity: 92, 
+    },
+    { 
+        id: 21, category: "Computer Science", name: "Cloud-Based E-Commerce", 
+        desc: "Responsive retail web application featuring a dynamic shopping cart, user authentication, inventory management admin panel, and mock payment gateway integration.", 
+        price: 4000, 
+        img: "assets/Cloud-Based E-Commerce.jpeg", video: "",
+        popularity: 88, 
+    },
+    { 
+        id: 26, category: "Computer Science", name: "Online Examination Portal", 
+        desc: "Secure web-based testing platform featuring automated grading, randomized question bank generation, and an administrative analytics dashboard.", 
+        price: 2500, 
+        img: "assets/Online Examination Portal.jpeg", video: "",
+        popularity: 90, 
+    },
+    { 
+        id: 27, category: "Computer Science", name: "Library Management Database", 
+        desc: "Centralized CRUD application designed for digital cataloging, user issue tracking, and automated overdue fine calculation algorithms.", 
+        price: 2000, 
+        img: "assets/Library Management Database.jpeg", video: "",
+        popularity: 85, 
+    },
+    { 
+        id: 28, category: "Computer Science", name: "Payroll & Attendance Tracker", 
+        desc: "Corporate HR dashboard handling employee database management, automated shift logging, and dynamic salary slip PDF generation.", 
+        price: 2500, 
+        img: "assets/Payroll & Attendance Tracker.jpeg", video: "",
+        popularity: 82, 
+    },
+    { 
+        id: 29, category: "Computer Science", name: "Local Service Booking App", 
+        desc: "Multi-vendor directory system connecting local service providers with users, featuring a dynamic booking calendar and a verified rating system.", 
+        price: 3000, 
+        img: "assets/Local Service Booking App.jpeg", video: "",
+        popularity: 88, 
+    },
+    { 
+        id: 30, category: "Computer Science", name: "Alumni Network Portal", 
+        desc: "Interactive networking platform for university graduates featuring job board integration, event management, and a searchable alumni directory.", 
+        price: 2500, 
+        img: "assets/Alumni Network Portal.jpeg", video: "",
+        popularity: 84, 
+    },
+    { 
+        id: 31, category: "Computer Science", name: "Crime Record Management", 
+        desc: "Secure law enforcement database simulator for logging FIRs, tracking case statuses, and managing digital suspect profiles with role-based access.", 
+        price: 3000, 
+        img: "assets/Crime Record Management.jpeg", video: "",
+        popularity: 86, 
+    },
+    { 
+        id: 32, category: "Computer Science", name: "Grievance Redressal System", 
+        desc: "Automated ticketing helpdesk for institutional grievance reporting, featuring priority escalation matrices and real-time status tracking for users.", 
+        price: 2500, 
+        img: "assets/Grievance Redressal System.jpeg", video: "",
+        popularity: 80, 
+    },
+    { 
+        id: 33, category: "Computer Science", name: "Online Auction Platform", 
+        desc: "Dynamic bidding web application with real-time timer countdowns, user wallet simulation, and automated highest-bidder checkout workflows.", 
+        price: 3500, 
+        img: "assets/Online Auction Platform.jpeg", video: "",
+        popularity: 89, 
+    },
 
     
     
