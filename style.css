@@ -38,7 +38,7 @@ header {
 
 /* --- CATEGORY PILL BAR (The Scrollable Row) --- */
 .category-pill-bar {
-    background: rgba(0, 0, 0, 0.15); /* Slightly darker strip to separate from header */
+    background: #000000; /* Slightly darker strip to separate from header */
     padding: 10px 5%;
     display: flex;
     gap: 12px;
@@ -54,7 +54,7 @@ header {
 }
 
 .cat-pill {
-    background: rgba(255, 255, 255, 0.1);
+    background: #000000;
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: white;
     padding: 8px 16px;
