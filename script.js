@@ -33,7 +33,7 @@ let projects = [
 
     { 
         id: 2, category: "Electronics", name: "Quadrocopter Drone", 
-        desc: "Quadrocopter Drone.", price: "25,000", 
+        desc: "Quadrocopter Drone.", price: "30,000", 
         img: "assets/drone.jpeg", video: "",
         popularity: 100, 
     },
