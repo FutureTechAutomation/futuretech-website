@@ -26,7 +26,7 @@ let projects = [
     },
     { 
         id: 10, category: "Electronics", name: "FPV Drone", 
-        desc: "FPV Drone.", price: "50,000", 
+        desc: "High-performance First-Person View (FPV) quadcopter featuring a Betaflight-compatible flight controller, low-latency VTX, and brushless motors on a carbon fiber frame.", price: "50,000", 
         img: "assets/fpv drone.jpeg", video: "",
         popularity: 95, 
     },
@@ -39,13 +39,13 @@ let projects = [
     },
     { 
         id: 9, category: "Electronics", name: "CNC writing machine", 
-        desc: "CNC writing machine.", price: "8500", 
+        desc: "2D automated pen plotter utilizing an Arduino CNC shield, A4988 stepper drivers, and GRBL firmware to execute precise G-code vector graphics and text.", price: "8500", 
         img: "assets/cnc writing machine.jpeg", video: "",
         popularity: 100, 
     },
     { 
-        id: 4, category: "Mechanical, Mechatronics", name: "Robotic Arm", 
-        desc: "6-DOF Pick and Place robot integrating mechanical design with embedded electronic control.", price: "8500", 
+        id: 4, category: "Electronics, Mechanical, Mechatronics", name: "Robotic Arm", 
+        desc: "6-Axis programmable robotic arm featuring a manual teach-mode. Utilizes EEPROM memory to record, save, and autonomously playback precise joint trajectories.", price: "8500", 
         img: "assets/robotic.jpeg", video: "",
         popularity: 88, 
     },
