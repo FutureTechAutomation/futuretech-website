@@ -1,8 +1,8 @@
 :root {
-    --primary: #0044cc;
-    --success: #28a745;
-    --dark: #333;
-    --light: #f4f4f4;
+    --primary: #111111; /* Stark Industrial Black */
+    --success: #00d26a; /* High-Visibility Tech Green for Buttons */
+    --dark: #222222; /* Deep Charcoal for Text */
+    --light: #f8f9fa; /* Crisp Off-White for Backgrounds */
 }
 
 /* Forces all scrolling on the website to be smooth */
@@ -20,13 +20,13 @@ body {
 /* HEADER */
 /* --- NEW TWO-TIER HEADER --- */
 header {
-    background: linear-gradient(135deg, #0033aa 0%, #0044cc 100%);
+    background: linear-gradient(135deg, #111111 0%, #2a2a2a 100%);
     color: white;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    padding: 0; /* Padding is now handled by the inner tiers */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Slightly darker shadow */
+    padding: 0;
 }
 
 .header-main {
@@ -686,13 +686,13 @@ body.dark-mode .home-hero::before {
     border-radius: 50px;
     cursor: pointer;
     transition: 0.3s;
-    box-shadow: 0 4px 15px rgba(0, 68, 204, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Neutral dark shadow */
 }
 
 .view-all-btn:hover {
-    background: #003399;
+    background: #333333; /* Lighter grey on hover */
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 68, 204, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* Floating Go to Top Button */
@@ -731,10 +731,27 @@ body.dark-mode .card,
 body.dark-mode .mini-card,
 body.dark-mode .home-about,
 body.dark-mode .modal-content,
-body.dark-mode .view-all-container {
-    background-color: #1e1e1e;
+body.dark-mode .view-all-container,
+body.dark-mode div[style*="border: 2px dashed"] {
+    background-color: #1e1e1e !important;
     color: #ffffff;
-    border-color: #333;
+    border-color: #333 !important;
+}
+
+/* --- THE INVISIBLE TEXT FIX --- */
+/* Mathematically overpowers any hardcoded black text in Dark Mode */
+body.dark-mode h2[style],
+body.dark-mode p[style*="color"],
+body.dark-mode .view-all-text,
+body.dark-mode .mini-card h4,
+body.dark-mode .footer-links h4 {
+    color: #e0e0e0 !important;
+}
+
+/* Makes the 'Browse All' button bright green in Dark Mode */
+body.dark-mode button[style*="border: 2px solid"] {
+    color: var(--success) !important;
+    border-color: var(--success) !important;
 }
 
 body.dark-mode .price {
