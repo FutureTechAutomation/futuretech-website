@@ -529,10 +529,18 @@ function renderHome() {
                     🔍 Browse All Categories ⬆️
                 </button>
             </div>
-            <div id="custom-promo-section" class="view-all-container" style="scroll-margin-top: 180px; background: rgba(0, 68, 204, 0.05); border: 2px dashed var(--primary); border-radius: 10px; max-width: 800px; margin: 40px auto 0 auto; padding: 30px;">
-                <p class="view-all-text" style="color: var(--primary);">Didn't find what you were looking for?</p>
-                <p style="margin-bottom: 20px; color: var(--dark); font-size: 0.95rem;">We build custom engineering projects tailored to your exact college or industry requirements.</p>
-                <button class="view-all-btn" onclick="openCustomModal()">Request Custom Project</button>
+            <div id="custom-promo-section" class="promo-split-container" style="scroll-margin-top: 180px; max-width: 1000px; margin: 40px auto 0 auto; padding: 0 5%;">
+                <div class="promo-box">
+                    <p class="view-all-text">⚙️ Custom Projects</p>
+                    <p class="promo-desc">We build custom engineering projects tailored to your exact college or industry requirements.</p>
+                    <button class="view-all-btn" onclick="openCustomModal()">Request Custom Build</button>
+                </div>
+                
+                <div class="promo-box">
+                    <p class="view-all-text">🖨️ Rapid 3D Printing</p>
+                    <p class="promo-desc">Have a 3D model? We print custom parts in high-strength PLA/PETG. Just send us your STL, OBJ, or STEP file.</p>
+                    <button class="view-all-btn" onclick="window.open('https://wa.me/919403560585?text=Hello%20FutureTech,%20I%20have%20a%203D%20file%20and%20want%20to%20check%20the%20printing%20cost.', '_blank')">Send File & Get Price</button>
+                </div>
             </div>
         </section>
 
