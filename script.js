@@ -83,7 +83,7 @@ let projects = [
         id: 11, category: "Electronics", name: "IoT Virtual Doctor Robot", 
         desc: "Remote-controlled telepresence rover enabling doctors to conduct virtual patient rounds and real-time video consultations via a web interface.", 
         price: "6500", 
-        img: "assets/Virtual Doctor Robot.jpg", video: "",
+        img: "assets/Virtual Doctor Robot.jpeg", video: "",
         popularity: 100, 
     },
     { 
