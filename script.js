@@ -21,31 +21,31 @@ let projects = [
     { 
         id: 1, category: "Electronics", name: "Mobile control robot car", 
         desc: "Bluetooth-controlled Arduino chassis with L298N motor drivers and Android app integration.", price: "2500", 
-        img: "assets/robot.jpeg", video: "",
+        img: "assets/robot.jpeg", video: "assets/robot.mp4",
         popularity: 90, 
     },
     { 
         id: 10, category: "Electronics", name: "FPV Drone", 
-        desc: "High-performance First-Person View (FPV) quadcopter featuring a Betaflight-compatible flight controller, low-latency VTX, and brushless motors on a carbon fiber frame.", price: "50,000", 
+        desc: "FPV Drone.", price: "50,000", 
         img: "assets/fpv drone.jpeg", video: "",
         popularity: 95, 
     },
 
     { 
         id: 2, category: "Electronics", name: "Quadrocopter Drone", 
-        desc: "Quadrocopter Drone.", price: "30,000", 
+        desc: "Quadrocopter Drone.", price: "25,000", 
         img: "assets/drone.jpeg", video: "",
         popularity: 100, 
     },
     { 
         id: 9, category: "Electronics", name: "CNC writing machine", 
-        desc: "2D automated pen plotter utilizing an Arduino CNC shield, A4988 stepper drivers, and GRBL firmware to execute precise G-code vector graphics and text.", price: "8500", 
+        desc: "CNC writing machine.", price: "8500", 
         img: "assets/cnc writing machine.jpeg", video: "",
         popularity: 100, 
     },
     { 
-        id: 4, category: "Electronics, Mechanical, Mechatronics", name: "Robotic Arm", 
-        desc: "6-Axis programmable robotic arm featuring a manual teach-mode. Utilizes EEPROM memory to record, save, and autonomously playback precise joint trajectories.", price: "8500", 
+        id: 4, category: "Mechanical, Mechatronics", name: "Robotic Arm", 
+        desc: "6-DOF Pick and Place robot integrating mechanical design with embedded electronic control.", price: "8500", 
         img: "assets/robotic.jpeg", video: "",
         popularity: 88, 
     },
@@ -83,7 +83,7 @@ let projects = [
         id: 11, category: "Electronics", name: "IoT Virtual Doctor Robot", 
         desc: "Remote-controlled telepresence rover enabling doctors to conduct virtual patient rounds and real-time video consultations via a web interface.", 
         price: "6500", 
-        img: "assets/Virtual Doctor Robot.jpeg", video: "",
+        img: "assets/Virtual Doctor Robot.jpg", video: "",
         popularity: 100, 
     },
     { 
@@ -250,10 +250,10 @@ function renderCategory(catName, sortBy = 'default') {
     // THE FEATURE YOU ASKED FOR: Empty State Check
     if (filtered.length === 0) {
         html += `
-            <div style="text-align:center; padding: 50px; color: #666;">
-                <h3>🚧 Projects Coming Soon</h3>
+            <div style="text-align:center; padding: 50px; color: var(--text);">
+                <h3 style="color: #fff;">🚧 Projects Coming Soon</h3>
                 <p>We are currently updating our ${catName} catalog. Contact us on WhatsApp for custom requirements!</p>
-                <button onclick="contactWhatsApp('General ${catName} Inquiry')" style="background:#28a745; color:white; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; margin-top:15px;">Inquire via WhatsApp</button>
+                <button onclick="contactWhatsApp('General ${catName} Inquiry')" style="background:var(--accent); color:white; border:none; padding:10px 20px; border-radius:0; font-family:'Share Tech Mono',monospace; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; margin-top:15px;">Inquire via WhatsApp</button>
             </div>
         `;
     } else {
@@ -276,13 +276,9 @@ function renderCategory(catName, sortBy = 'default') {
                 `}
             </div>
                     <h3>${p.name}</h3>
-                    <div style="position: relative; display: flex; justify-content: center; align-items: center; margin-bottom: 10px; padding: 0 10px; min-height: 24px;">
-                        <div style="font-size: 0.9rem; color: #666; font-weight: bold;">
-                            🏷️ ${p.category}
-                        </div>
-                        <div style="position: absolute; right: 10px; font-size: 1.2rem; user-select: none;">
-                            <span style="cursor: pointer;" onclick="shareProject('${p.name}')" title="Share Project">🔗</span>
-                        </div>
+                    <div style="display:flex; justify-content:space-between; align-items:center; padding: 0 16px; margin-bottom: 8px;">
+                        <div style="font-family:'Share Tech Mono',monospace; font-size:0.72rem; color:#888480; letter-spacing:0.08em; text-transform:uppercase;">${p.category}</div>
+                        <span style="cursor:pointer; color:#888480; font-size:1rem;" onclick="shareProject('${p.name}')" title="Share Project">🔗</span>
                     </div>
                     <p>${p.desc}</p>
                     <p class="price">Starting at: ₹${p.price}</p>
@@ -295,10 +291,10 @@ function renderCategory(catName, sortBy = 'default') {
             // --- THE CATEGORY SAFETY NET ---
     html += `
         <div style="text-align: center; padding: 40px 5% 60px 5%;">
-            <div style="background: rgba(0, 68, 204, 0.05); border: 2px dashed var(--primary); border-radius: 10px; max-width: 800px; margin: 0 auto; padding: 30px;">
-                <p style="color: var(--primary); font-size: 1.2rem; font-weight: bold; margin-bottom: 10px;">Didn't find the perfect ${catName} project?</p>
-                <p style="margin-bottom: 20px; color: var(--dark); font-size: 0.95rem;">We can build it from scratch. Tell us your exact requirements.</p>
-                <button onclick="openCustomModal()" style="background: var(--primary); color: white; border: none; padding: 12px 25px; border-radius: 5px; font-weight: bold; font-size: 1rem; cursor: pointer; transition: 0.3s;">
+            <div style="background: var(--panel); border: 1px dashed var(--border); border-radius: 0; max-width: 800px; margin: 0 auto; padding: 30px;">
+                <p style="color: #ffffff; font-family: var(--display); font-size: 1.4rem; font-weight: bold; margin-bottom: 10px; letter-spacing: 0.06em; text-transform: uppercase;">Didn't find the perfect ${catName} project?</p>
+                <p style="margin-bottom: 20px; color: var(--muted); font-size: 0.95rem;">We can build it from scratch. Tell us your exact requirements.</p>
+                <button onclick="openCustomModal()" style="background: transparent; color: var(--accent); border: 1px solid var(--accent); padding: 12px 25px; border-radius: 0; font-family: var(--mono); font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; transition: 0.3s;" onmouseover="this.style.background='var(--accent)'; this.style.color='#fff';" onmouseout="this.style.background='transparent'; this.style.color='var(--accent)';">
                     Request Custom ${catName} Project
                 </button>
             </div>
@@ -309,7 +305,6 @@ function renderCategory(catName, sortBy = 'default') {
     
     app.innerHTML = html;
     
-    app.innerHTML = html;
     window.scrollTo({ top: 0, behavior: 'smooth' });
     
 }
@@ -457,13 +452,9 @@ function executeSearch(searchQuery = null, sortBy = 'default') {
                         `}
                     </div>
                     <h3>${p.name}</h3>
-                    <div style="position: relative; display: flex; justify-content: center; align-items: center; margin-bottom: 10px; padding: 0 10px; min-height: 24px;">
-                        <div style="font-size: 0.9rem; color: #666; font-weight: bold;">
-                            🏷️ ${p.category}
-                        </div>
-                        <div style="position: absolute; right: 10px; font-size: 1.2rem; user-select: none;">
-                            <span style="cursor: pointer;" onclick="shareProject('${p.name}')" title="Share Project">🔗</span>
-                        </div>
+                    <div style="display:flex; justify-content:space-between; align-items:center; padding: 0 16px; margin-bottom: 8px;">
+                        <div style="font-family:'Share Tech Mono',monospace; font-size:0.72rem; color:#888480; letter-spacing:0.08em; text-transform:uppercase;">${p.category}</div>
+                        <span style="cursor:pointer; color:#888480; font-size:1rem;" onclick="shareProject('${p.name}')" title="Share Project">🔗</span>
                     </div>
                     <p>${p.desc}</p>
                     <p class="price">Starting at: ₹${p.price}</p>
@@ -475,7 +466,7 @@ function executeSearch(searchQuery = null, sortBy = 'default') {
     }
 
     app.innerHTML = html;
-    app.innerHTML = html;
+    
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -499,8 +490,8 @@ function renderHome() {
         </section>
 
         <section id="featured" class="home-products" style="scroll-margin-top: 175px;">
-            <div style="width: 90%; max-width: 1200px; margin: 0 auto; text-align: left;">
-                <h2 style="color: var(--primary); margin-bottom: 10px; margin-top: 30px;">Featured Solutions</h2>
+            <div style="width: 90%; max-width: 1200px; margin: 0 auto; text-align: center;">
+                <h2 style="color: #ffffff; margin-bottom: 10px; margin-top: 30px;">Featured Solutions</h2>
             </div>
             <div class="mini-product-grid">
     `;
@@ -513,9 +504,7 @@ function renderHome() {
                     <img src="${p.img}" alt="${p.name}" onerror="this.onerror=null; this.src='https://via.placeholder.com/150'">
                 </div>
                 <h4>${p.name}</h4>
-                <div style="font-size: 0.85rem; color: #666; font-weight: bold; margin-bottom: 5px;">
-                    🏷️ ${p.category}
-                </div>
+                <div class="mini-cat">${p.category}</div>
                 <p class="price">Starting at: ₹${p.price}</p>
                 <button onclick="contactWhatsApp('${p.name}')">Inquiry</button>
             </div>
@@ -524,9 +513,9 @@ function renderHome() {
 
     html += `
             </div>
-            <div style="text-align: center; margin-top: 25px; padding-bottom: 20px;">
-                <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" style="background: transparent; border: 2px solid var(--primary); color: var(--primary); padding: 10px 25px; border-radius: 25px; font-weight: bold; font-size: 1rem; cursor: pointer;">
-                    🔍 Browse All Categories ⬆️
+            <div style="text-align: center; margin: 28px 0 20px 0;">
+                <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" style="background: transparent; border: 1px solid var(--accent, #e85d24); color: var(--accent, #e85d24); padding: 10px 28px; font-family:'Share Tech Mono',monospace; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; border-radius:0;">
+                    ↑ Browse All Categories
                 </button>
             </div>
             <div id="custom-promo-section" class="promo-split-container" style="scroll-margin-top: 180px; max-width: 1000px; margin: 40px auto 0 auto; padding: 0 5%;">
@@ -544,9 +533,9 @@ function renderHome() {
             </div>
         </section>
 
-        <section class="deliverables-section" style="padding: 50px 5% 10px 5%; text-align: center; background: #ffffff;">
-            <h2 style="color: var(--primary); margin-bottom: 10px;">What's Included in Your Project?</h2>
-            <p style="color: #666; margin-bottom: 40px; font-size: 1rem;">Everything you need to submit and present your project with confidence.</p>
+        <section class="deliverables-section" style="padding: 50px 5% 10px 5%; text-align: center; background: var(--panel);">
+            <h2 style="color: #ffffff; margin-bottom: 10px;">What's Included in Your Project?</h2>
+            <p style="color: var(--muted); margin-bottom: 40px; font-size: 1rem;">Everything you need to submit and present your project with confidence.</p>
             
             <div class="deliverables-grid">
                 <div class="deliverable-card">
@@ -572,7 +561,7 @@ function renderHome() {
             </div>
         </section>
 
-        <section id="about-us-section" class="home-about" style="scroll-margin-top: 170px; padding-top: 10px; padding-bottom: 40px;">
+        <section id="about-us-section" class="home-about" style="scroll-margin-top: 170px; padding-top: 10px; padding-bottom: 15px;">
             <div class="about-content" style="max-width: 800px; margin: 0 auto; text-align: center;">
                 <h2 style="margin-top: 0;">About FutureTech Automation</h2>
                 <p style="font-size: 1.05rem; line-height: 1.6; margin-top: 15px;">
@@ -581,7 +570,7 @@ function renderHome() {
             </div>
         </section>
 
-        <section class="home-about trust-section" style="padding-top: 20px; padding-bottom: 10px;">
+        <section class="home-about trust-section" style="padding-top: 28px; padding-bottom: 28px;">
             <div class="about-content" style="max-width: 1000px; margin: 0 auto; text-align: center; padding: 0 5%;">
                 <h2>Why Choose FutureTech?</h2>
                 <div class="trust-grid">
@@ -639,27 +628,6 @@ window.onclick = function(event) {
     if (event.target == customModal) customModal.style.display = "none";
 }
 
-function toggleDarkMode() {
-    const body = document.body;
-    const btn = document.getElementById('themeToggle');
-    body.classList.toggle('dark-mode');
-    
-    if(body.classList.contains('dark-mode')) {
-        btn.innerHTML = '☀️';
-        localStorage.setItem('theme', 'dark');
-    } else {
-        btn.innerHTML = '🌙';
-        localStorage.setItem('theme', 'light');
-    }
-}
-
-// Check for saved theme on load
-window.onload = function() {
-    if(localStorage.getItem('theme') === 'dark') {
-        document.body.classList.add('dark-mode');
-        document.getElementById('themeToggle').innerHTML = '☀️';
-    }
-} 
 
 // --- MEDIA SLIDER LOGIC ---
 function toggleMedia(id) {
