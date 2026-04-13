@@ -1182,8 +1182,48 @@ textarea.inquiry-input {
     .footer-brand p { max-width: 100%; }
 
     .product-grid { margin: 12px 0; }
-
     .promo-split-container { margin: 24px 5% 0; }
+
+    /* --- MOBILE 2x2 FEATURED GRID FIX --- */
+    .mini-product-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 10px 5%;
+        justify-content: stretch;
+        overflow-x: hidden; /* Kills the broken horizontal scroll */
+    }
+
+    .mini-card {
+        flex: unset; /* Removes the desktop fixed width */
+        width: 100%; /* Forces card to fit the grid cell */
+    }
+
+    .mini-media {
+        height: 110px; /* Shrunk from 160px to save vertical space */
+    }
+
+    .mini-card h4 {
+        font-size: 0.85rem; /* Shrunk to prevent title text wrapping */
+        margin: 10px 10px 2px 10px;
+    }
+
+    .mini-card .mini-cat {
+        font-size: 0.65rem;
+        margin: 0 10px 4px 10px;
+    }
+
+    .mini-card p.price {
+        font-size: 0.75rem;
+        margin: 0 10px 8px 10px;
+    }
+
+    .mini-card button {
+        padding: 8px 10px;
+        font-size: 0.7rem;
+        margin: auto 10px 10px 10px;
+        width: calc(100% - 20px); /* Re-calculates button width for new padding */
+    }
 }
 
 /* ── DARK MODE OVERRIDES — already dark by default ────────── */
