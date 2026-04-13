@@ -1032,6 +1032,8 @@ nav a:hover { color: var(--accent); }
 .contact-item {
     display: flex;
     align-items: center;
+    flex-wrap: wrap; /* Allows elements to drop to the next line on small screens */
+    word-break: break-word; /* Forces long emails to break safely inside the box */
     gap: 10px;
     padding: 12px 16px;
     background: var(--panel);
