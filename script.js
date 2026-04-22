@@ -527,7 +527,7 @@ function renderHome() {
                 
                 <div class="promo-box">
                     <p class="view-all-text">🖨️ Premium 3D Printing</p>
-                    <p class="promo-desc">Need a custom plastic part or project box? We have launched <strong>MetsInnovative.in</strong>, our dedicated second website just for 3D printing. Same team, faster service.</p>
+                    <p class="promo-desc">Need a custom part or project box? We have launched <strong>MetsInnovative.in</strong>, our dedicated second website just for 3D printing. Same team, faster service.</p>
                     <button class="view-all-btn" onclick="window.open('https://metsinnovative.in', '_blank')">Visit Our 3D Printing Site ↗</button>
                 </div>
             </div>
