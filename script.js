@@ -526,9 +526,9 @@ function renderHome() {
                 </div>
                 
                 <div class="promo-box">
-                    <p class="view-all-text">🖨️ Rapid 3D Printing</p>
-                    <p class="promo-desc">Have a 3D model? We print custom parts in high-strength PLA/PETG. Just send us your STL, OBJ, or STEP file.</p>
-                    <button class="view-all-btn" onclick="window.open('https://wa.me/919403560585?text=Hello%20FutureTech,%20I%20have%20a%203D%20file%20and%20want%20to%20check%20the%20printing%20cost.', '_blank')">Send File & Get Price</button>
+                    <p class="view-all-text">🖨️ Premium 3D Printing</p>
+                    <p class="promo-desc">Need a custom plastic part or project box? We have launched <strong>MetsInnovative.in</strong>, our dedicated second website just for 3D printing. Same team, faster service.</p>
+                    <button class="view-all-btn" onclick="window.open('https://metsinnovative.in', '_blank')">Visit Our 3D Printing Site ↗</button>
                 </div>
             </div>
         </section>
