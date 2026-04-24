@@ -213,7 +213,62 @@ let projects = [
         img: "assets/Online Auction Platform.jpeg", video: "",
         popularity: 89, 
     },
-
+    { 
+        id: 34, category: "Electronics, Mechatronics", name: "3D Scanner Machine", 
+        desc: "Automated photogrammetry platform that rotates physical objects on a precision turntable while synchronizing camera shutter triggers to capture complete 360-degree data.", 
+        price: 6500, 
+        img: "assets/3D Scanner Machine using Arduino Project1777059492.jpeg", video: "",
+        popularity: 87, 
+    },
+    { 
+        id: 35, category: "Electronics, Mechanical", name: "IoT Water Pollution Monitor RC Boat", 
+        desc: "An aquatic rover that navigates water bodies to sample pH, turbidity, and temperature, transmitting real-time telemetry to a cloud dashboard for remote pollution mapping.", 
+        price: 6000, 
+        img: "assets/IOT Water Pollution Monitor RC Boat1777059492.jpeg", video: "",
+        popularity: 91, 
+    },
+    { 
+        id: 36, category: "Electronics, Electrical", name: "IoT Mining Tracking & Safety Helmet", 
+        desc: "Smart safety gear that monitors atmospheric toxic gas levels and worker vitals, triggering automatic cloud alerts and localized alarms if hazardous threshold limits are breached.", 
+        price: 5500, 
+        img: "assets/IOT Mining Tracking & Worker Safety Helmet1777059492.jpeg", video: "",
+        popularity: 85, 
+    },
+    { 
+        id: 37, category: "Mechanical, Mechatronics", name: "Automated Drain Cleaner", 
+        desc: "A motorized mechanical dredge system designed to automatically scoop, lift, and dispose of solid waste blocking drainage channels, preventing urban waterlogging.", 
+        price: 5500, 
+        img: "assets/Automated Drain or Gutter Cleaner1777059492.jpeg", video: "",
+        popularity: 82, 
+    },
+    { 
+        id: 38, category: "Mechanical, Electrical", name: "Automatic Board Cleaner System", 
+        desc: "A rack-and-pinion driven sweeping mechanism that glides across classroom boards to autonomously erase content, saving time and reducing chalk dust inhalation.", 
+        price: 5000, 
+        img: "assets/Automatic Blackboard Whiteboard Cleaner System1777059492.jpeg", video: "",
+        popularity: 75, 
+    },
+    { 
+        id: 39, category: "Mechatronics, Mechanical", name: "Spider Robot with Grass Cutter", 
+        desc: "A multi-legged, all-terrain agricultural rover that simultaneously trims overgrowth and dispenses liquid fertilizers through an automated fluid-pump system.", 
+        price: 8000, 
+        img: "assets/Pesticide Sprayer Spider Robot with Grass Cutter1777059492.jpeg", video: "",
+        popularity: 89, 
+    },
+    { 
+        id: 40, category: "Mechanical, Mechatronics", name: "External Pipe Climbing Robot", 
+        desc: "A specialized gripper robot engineered to scale vertical industrial pipes using high-friction motorized wheels, ideal for remote structural inspection and maintenance.", 
+        price: 7500, 
+        img: "assets/Design and Fabrication of External Pipe Climbing Robot1777059492.jpeg", video: "",
+        popularity: 93, 
+    },
+    { 
+        id: 41, category: "Electronics, Mechatronics", name: "Farm Protector Drone", 
+        desc: "An autonomous aerial deterrent system that patrols agricultural perimeters, utilizing acoustic alarms and flashing strobes to repel pests without chemical intervention.", 
+        price: 25000, 
+        img: "assets/Farm Protector Drone for using Arduino1777059492.jpeg", video: "",
+        popularity: 94, 
+    },
     
     
 ];
