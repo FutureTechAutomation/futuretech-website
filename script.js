@@ -26,20 +26,20 @@ let projects = [
     },
     { 
         id: 10, category: "Electronics", name: "FPV Drone", 
-        desc: "FPV Drone.", price: "50,000", 
+        desc: "A high-agility aerial platform engineered for first-person view racing. It features low-latency video transmission and aggressively tuned PID controllers for instantaneous pitch and roll response during high-speed maneuvers.", price: "50,000", 
         img: "assets/fpv drone.jpeg", video: "",
         popularity: 95, 
     },
 
     { 
         id: 2, category: "Electronics", name: "Quadrocopter Drone", 
-        desc: "Quadrocopter Drone.", price: "25,000", 
+        desc: "A stable multi-rotor vehicle utilizing precision IMU sensors and an advanced flight controller. The system dynamically adjusts individual motor RPMs in real-time to ensure level hovering and smooth, controlled flight paths.", price: "25,000", 
         img: "assets/drone.jpeg", video: "",
         popularity: 100, 
     },
     { 
         id: 9, category: "Electronics", name: "CNC writing machine", 
-        desc: "CNC writing machine.", price: "8500", 
+        desc: "A Cartesian kinematic plotter driven by precision stepper motors. It parses G-code coordinate data to control a servo-actuated toolhead, accurately translating digital vector graphics into physical ink strokes.", price: "8500", 
         img: "assets/cnc writing machine.jpeg", video: "",
         popularity: 100, 
     },
@@ -75,7 +75,7 @@ let projects = [
     },
     { 
         id: 3, category: "Electronics", name: "Alcohol Detector", 
-        desc: "0-25V LCD measurement.", price: "1000", 
+        desc: "A safety-critical embedded system utilizing a semiconductor gas sensor to measure ethanol concentrations. It employs ADC threshold logic to automatically trigger a relay, disabling engine ignition upon detecting intoxication.", price: "1000", 
         img: "assets/alcohol detector.jpeg", video: "",
         popularity: 70, 
     },
