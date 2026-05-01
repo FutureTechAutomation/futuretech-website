@@ -265,7 +265,7 @@ let projects = [
     { 
         id: 41, category: "Electronics, Mechatronics", name: "Farm Protector Drone", 
         desc: "An autonomous aerial deterrent system that patrols agricultural perimeters, utilizing acoustic alarms and flashing strobes to repel pests without chemical intervention.", 
-        price: 35000, 
+        price: 60000, 
         img: "assets/Farm Protector Drone for using Arduino1777059492.jpeg", video: "",
         popularity: 94, 
     },
