@@ -33,19 +33,19 @@ let projects = [
 
     { 
         id: 2, category: "Electronics", name: "Quadrocopter Drone", 
-        desc: "A stable multi-rotor vehicle utilizing precision IMU sensors and an advanced flight controller. The system dynamically adjusts individual motor RPMs in real-time to ensure level hovering and smooth, controlled flight paths.", price: "25000", 
+        desc: "A stable multi-rotor vehicle utilizing precision IMU sensors and an advanced flight controller. The system dynamically adjusts individual motor RPMs in real-time to ensure level hovering and smooth, controlled flight paths.", price: "35000", 
         img: "assets/drone.jpeg", video: "",
         popularity: 94, 
     },
     { 
         id: 9, category: "Electronics", name: "CNC writing machine", 
-        desc: "A Cartesian kinematic plotter driven by precision stepper motors. It parses G-code coordinate data to control a servo-actuated toolhead, accurately translating digital vector graphics into physical ink strokes.", price: "8500", 
+        desc: "A Cartesian kinematic plotter driven by precision stepper motors. It parses G-code coordinate data to control a servo-actuated toolhead, accurately translating digital vector graphics into physical ink strokes.", price: "9500", 
         img: "assets/cnc writing machine.jpeg", video: "",
         popularity: 100, 
     },
     { 
         id: 4, category: "Mechanical, Mechatronics", name: "Robotic Arm", 
-        desc: "6-DOF Pick and Place robot integrating mechanical design with embedded electronic control.", price: "8500", 
+        desc: "6-DOF Pick and Place robot integrating mechanical design with embedded electronic control.", price: "9500", 
         img: "assets/robotic.jpeg", video: "",
         popularity: 88, 
     },
