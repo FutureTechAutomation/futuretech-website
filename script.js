@@ -599,11 +599,6 @@ function renderHome() {
                     <p>Standard formatting project report and an approval-ready synopsis for your guide.</p>
                 </div>
                 <div class="deliverable-card">
-                    <div class="del-icon">📘</div>
-                    <h4>2x Black Books</h4>
-                    <p>Two professionally bound hardcopies. <em>(Additional copies available on request).</em></p>
-                </div>
-                <div class="deliverable-card">
                     <div class="del-icon">💻</div>
                     <h4>Source Code & Circuit</h4>
                     <p>Fully commented code and clear schematics to help you prepare for your viva.</p>
