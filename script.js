@@ -75,7 +75,7 @@ let projects = [
     },
     { 
         id: 3, category: "Electronics", name: "Alcohol Detector", 
-        desc: "A safety-critical embedded system utilizing a semiconductor gas sensor to measure ethanol concentrations. It employs ADC threshold logic to automatically trigger a relay, disabling engine ignition upon detecting intoxication.", price: "1000", 
+        desc: "A safety-critical embedded system utilizing a semiconductor gas sensor to measure ethanol concentrations. It employs ADC threshold logic to automatically trigger a relay, disabling engine ignition upon detecting intoxication.", price: "2500", 
         img: "assets/alcohol detector.jpeg", video: "",
         popularity: 70, 
     },
@@ -89,7 +89,7 @@ let projects = [
     { 
         id: 12, category: "Electronics", name: "IoT Toll Booth Manager", 
         desc: "Cloud-connected automated toll collection system that logs vehicle data, deducts balances in real-time, and operates a mechanical boom barrier.", 
-        price: "3000", 
+        price: "3500", 
         img: "assets/Based Toll Booth Manager System.jpeg", video: "",
         popularity: 85, 
     },
@@ -265,7 +265,7 @@ let projects = [
     { 
         id: 41, category: "Electronics, Mechatronics", name: "Farm Protector Drone", 
         desc: "An autonomous aerial deterrent system that patrols agricultural perimeters, utilizing acoustic alarms and flashing strobes to repel pests without chemical intervention.", 
-        price: 60000, 
+        price: 70000, 
         img: "assets/Farm Protector Drone for using Arduino1777059492.jpeg", video: "",
         popularity: 94, 
     },
