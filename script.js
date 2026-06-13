@@ -96,7 +96,7 @@ let projects = [
     { 
         id: 13, category: "Electrical", name: "IoT Smart Automation", 
         desc: "Centralized smart relay system allowing users to remotely monitor and control heavy AC appliances for homes or industries using a smartphone dashboard.", 
-        price: "4000", 
+        price: "5500", 
         img: "assets/Home Automation.jpeg", video: "",
         popularity: 95, 
     },
@@ -237,14 +237,14 @@ let projects = [
     { 
         id: 37, category: "Mechanical, Mechatronics", name: "Automated Drain Cleaner", 
         desc: "A motorized mechanical dredge system designed to automatically scoop, lift, and dispose of solid waste blocking drainage channels, preventing urban waterlogging.", 
-        price: 5500, 
+        price: 7500, 
         img: "assets/Automated Drain or Gutter Cleaner1777059492.jpeg", video: "",
         popularity: 82, 
     },
     { 
         id: 38, category: "Mechanical, Electrical", name: "Automatic Board Cleaner System", 
         desc: "A rack-and-pinion driven sweeping mechanism that glides across classroom boards to autonomously erase content, saving time and reducing chalk dust inhalation.", 
-        price: 5000, 
+        price: 8000, 
         img: "assets/Automatic Blackboard Whiteboard Cleaner System1777059492.jpeg", video: "",
         popularity: 75, 
     },
