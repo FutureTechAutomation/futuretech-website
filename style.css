@@ -327,6 +327,84 @@ nav a:hover { color: var(--accent); }
 
 .cta-btn:hover { background: #c44d1a; }
 
+/* ── HOME: BROWSE BY CATEGORY ─────────────────────────────── */
+.home-categories {
+    background: var(--bg);
+    padding: 40px 5% 20px 5%;
+    border-bottom: 1px solid var(--border);
+}
+
+.home-categories-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home-categories h2 {
+    color: #ffffff;
+    margin: 0 0 8px 0;
+}
+
+.home-categories-sub {
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0 0 24px 0;
+}
+
+.category-tile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+}
+
+.category-tile {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 0;
+    padding: 22px 14px;
+    cursor: pointer;
+    font-family: var(--mono);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: border-color 0.2s, background 0.2s, transform 0.2s;
+    text-align: center;
+}
+
+.category-tile:hover {
+    border-color: var(--accent);
+    background: rgba(232, 93, 36, 0.08);
+    transform: translateY(-2px);
+}
+
+.category-tile-emoji {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.category-tile-name {
+    font-family: var(--display);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.category-tile-count {
+    font-size: 0.72rem;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.category-tile.is-empty .category-tile-count { color: var(--muted); }
+
 /* ── CATEGORY HEADER ─────────────────────────────────────── */
 .category-header {
     display: flex;
@@ -1137,6 +1215,32 @@ textarea.inquiry-input {
 /* ── MOBILE ─────────────────────────────────────────────── */
 @media (max-width: 768px) {
     html, body { overflow-x: hidden; width: 100%; }
+
+    /* All 7 category pills visible at once — no horizontal swipe required */
+    .swipe-hint { display: none; }
+
+    .category-pill-bar {
+        flex-wrap: wrap;
+        overflow-x: visible;
+        white-space: normal;
+        justify-content: center;
+        gap: 6px;
+        padding: 8px 12px;
+    }
+
+    .cat-pill {
+        padding: 6px 12px;
+        font-size: 0.72rem;
+    }
+
+    .category-tile-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .category-tile { padding: 16px 8px; }
+    .category-tile-emoji { font-size: 1.6rem; }
+    .category-tile-name { font-size: 0.85rem; }
+    .category-tile-count { font-size: 0.65rem; }
 
     .header-main {
         flex-direction: column !important;
