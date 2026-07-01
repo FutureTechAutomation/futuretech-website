@@ -83,7 +83,7 @@ let projects = [
         id: 11, category: "Electronics", name: "IoT Virtual Doctor Robot", 
         desc: "Remote-controlled telepresence rover enabling doctors to conduct virtual patient rounds and real-time video consultations via a web interface.", 
         price: "6500", 
-        img: "assets/Virtual Doctor Robot.jpeg", video: "",
+        img: "assets/Virtual Doctor Robot.jpg", video: "",
         popularity: 100, 
     },
     { 
@@ -529,19 +529,53 @@ function renderHome() {
     // Get the top 4 most popular products to show as "Featured"
     const featuredProducts = [...projects].sort((a, b) => b.popularity - a.popularity).slice(0, 4);
 
+    const categoryTiles = [
+        { emoji: '📦', label: 'DIY Kits',         slug: 'DIY Kits' },
+        { emoji: '⚡', label: 'Electronics',       slug: 'Electronics' },
+        { emoji: '🔌', label: 'Electrical',        slug: 'Electrical' },
+        { emoji: '💻', label: 'Computer Science',  slug: 'Computer Science' },
+        { emoji: '🔧', label: 'Mechanical',        slug: 'Mechanical' },
+        { emoji: '🤖', label: 'AI & DS',           slug: 'AI' },
+        { emoji: '⚙️', label: 'Mechatronics',      slug: 'Mechatronics' },
+    ];
+    const countFor = slug => projects.filter(p => p.category.includes(slug)).length;
+
     let html = `
         <section class="home-hero">
             <h1 class="brand-big">FUTURETECH</h1>
             <p class="tagline">Innovative Embedded & Robotics Solutions</p>
             <p class="price-disclaimer"><em>* Prices are flexible. We can discuss and customize according to your budget.</em></p>
-            <br> 
+            <br>
             <p class="custom-project-highlight" style="cursor: pointer;" onclick="document.getElementById('custom-promo-section').scrollIntoView({ behavior: 'smooth' })" title="Scroll down to custom projects">💡 <strong>Have a unique idea?</strong> We build custom projects from scratch. Click here to discuss your requirements!</p>
-            
+
             <p style="margin-top: 15px; font-size: 1rem; color: #e0e0e0; font-weight: 500;">
                 ⚡ Need fast answers or hardware modifications? <span onclick="contactWhatsApp('General Inquiry')" style="color: cyan; text-decoration: underline; cursor: pointer;">Speak directly to an engineer.</span>
             </p>
             <br>
-            <button class="cta-btn" onclick="document.getElementById('featured').scrollIntoView({ behavior: 'smooth' })">Explore Projects</button>
+            <button class="cta-btn" onclick="document.getElementById('browse-categories').scrollIntoView({ behavior: 'smooth' })">Browse Categories</button>
+        </section>
+
+        <section id="browse-categories" class="home-categories" style="scroll-margin-top: 175px;">
+            <div class="home-categories-inner">
+                <h2>Browse by Category</h2>
+                <p class="home-categories-sub">Jump straight to the trade you need — every project we build, organized.</p>
+                <div class="category-tile-grid">
+                    ${categoryTiles.map(c => {
+                        const n = countFor(c.slug);
+                        let countLabel;
+                        if (n === 0) countLabel = 'Coming soon';
+                        else if (n === 1) countLabel = '1 project';
+                        else countLabel = `${n} projects`;
+                        return `
+                            <button class="category-tile${n === 0 ? ' is-empty' : ''}" onclick="renderCategory('${c.slug}')" aria-label="Browse ${c.label} projects">
+                                <span class="category-tile-emoji">${c.emoji}</span>
+                                <span class="category-tile-name">${c.label}</span>
+                                <span class="category-tile-count">${countLabel}</span>
+                            </button>
+                        `;
+                    }).join('')}
+                </div>
+            </div>
         </section>
 
         <section id="featured" class="home-products" style="scroll-margin-top: 175px;">
