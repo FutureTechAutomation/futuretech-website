@@ -20,7 +20,7 @@ function shareProject(projectName) {
 let projects = [
     { 
         id: 1, category: "Electronics", name: "Mobile control robot car", 
-        desc: "Bluetooth-controlled Arduino chassis with L298N motor drivers and Android app integration.",price: "6500", 
+        desc: "Bluetooth-controlled Arduino chassis with L298N motor drivers and Android app integration.", 
         img: "assets/robot.jpeg", video: "assets/robot.mp4",
         popularity: 90, 
     },
