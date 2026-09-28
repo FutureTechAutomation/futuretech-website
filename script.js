@@ -52,7 +52,7 @@ let projects = [
     { 
         id: 5, category: "Mechanical", name: "360 degree car", 
         desc: "Omnidirectional mecanum wheel rover capable of seamless 360-degree zero-radius turns.",
-        img: "assets/360 degree car.jpeg", video: "",
+        img: "assets/360-degree-car.jpeg", video: "",
         popularity: 88, 
     },
     { 
