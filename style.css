@@ -1339,3 +1339,37 @@ body.dark-mode {
     --steel: #202020;
     --panel: #181818;
 }
+
+/* The outer container hides everything that scrolls off-screen */
+.swipe-hint {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    color: #e85d24; /* FTA Orange */
+}
+
+/* The wrapper holds both text spans and handles the movement */
+.ticker-wrapper {
+    display: flex;
+    width: max-content;
+    animation: seamless-ticker 15s linear infinite;
+}
+
+/* Ensures the text stays in a straight line */
+.ticker-text {
+    display: flex;
+    white-space: nowrap;
+}
+
+/* The animation shifts the wrapper exactly 50% to the left, then resets */
+@keyframes seamless-ticker {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
